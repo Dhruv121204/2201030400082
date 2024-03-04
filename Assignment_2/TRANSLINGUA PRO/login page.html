@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRANSLINGUA PRO</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+            text-align: center;
+            text-transform: uppercase;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            letter-spacing: 2px;
+        }
+
+        .logo {
+            width: 100px;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex; 
+            align-items: center; 
+        }
+
+        .login-image {
+            flex: 1; 
+            margin-right: 20px; 
+        }
+
+        .login-image img {
+            width: 100%; 
+            border-radius: 8px; 
+        }
+
+        .login-form-container {
+            flex: 1;
+            border: 2px solid #333; 
+            border-radius: 8px;
+            padding: 20px;
+        }
+
+        .login-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .login-form input[type="text"],
+        .login-form input[type="password"],
+        .login-form button {
+            margin: 10px;
+            padding: 10px;
+            width: calc(100% - 22px); 
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .login-form button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .login-form button:hover {
+            background-color: #555;
+        }
+
+        .login-form a {
+            margin-top: 10px;
+            color: #333;
+            text-decoration: none;
+        }
+
+        .login-form a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            width: 100%;
+        }
+
+        .social-icons {
+            margin-top: 10px;
+        }
+
+        .social-icons a {
+            display: inline-block;
+            margin: 0 10px;
+            color: #fff;
+            font-size: 24px;
+        }
+
+        .menu-popup {
+            display: none;
+            position: absolute;
+            top: 50px;
+            right: 20px;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            border-radius: 4px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .menu-popup ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .menu-popup ul li {
+            margin-bottom: 10px;
+        }
+
+        .menu-popup ul li a {
+            color: #fff;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .menu-popup ul li a i {
+            margin-right: 10px;
+        }
+        .but a {
+            text-decoration: none;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="IMG_1953.PNG" alt="TRANSLINGUA PRO Logo" class="logo">
+        <h1>TRANSLINGUA PRO</h1>
+        <div id="menuBtn">Menu</div>
+        <div id="menuPopup" class="menu-popup">
+            <ul>
+                <li><a href="home page.html">Home</a></li>
+                <li><a href="about us.html">About</a></li>
+                <li><a href="service page.html">Services</a></li>
+                <li><a href=" contcet us.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="content">
+        <div class="login-image">
+            <img src="caa0632b7cb3d2dc29294fc91b0a771f.png" alt="Login Image">
+        </div>
+        <div class="login-form-container">
+            <div class="login-form">
+                <h2>Login</h2>
+                <form>
+                    <input type="text" placeholder="Username" required>
+                    <input type="password" placeholder="Password" required>
+                    <button class="but" type="submit"><a href="home page.html">Login</a></button>
+                </form>
+                <a href="sign up.html">Sign Up</a>
+                 <a href="forgotten password.html">Forgot Password?</a>
+            </div>
+        </div>
+    </div>
+   
+    <footer>
+        <p>Follow us on social media:</p>
+        <div class="social-icons">
+            <a href="#"><img src="https://img.icons8.com/color/48/000000/facebook.png"/></a>
+            <a href="#"><img src="https://img.icons8.com/color/48/000000/twitter.png"/></a>
+            <a href="#"><img src="https://img.icons8.com/color/48/000000/instagram-new.png"/></a>
+        </div>
+        <p>&copy; 2024 TRANSLINGUA PRO. All rights reserved.</p>
+    </footer>
+    <script>
+        // JavaScript to toggle menu popup
+        const menuBtn = document.getElementById('menuBtn');
+        const menuPopup = document.getElementById('menuPopup');
+
+        menuBtn.addEventListener('click', () => {
+            menuPopup.style.display = (menuPopup.style.display === 'block') ? 'none' : 'block';
+        });
+    </script>
+</body>
+</html>

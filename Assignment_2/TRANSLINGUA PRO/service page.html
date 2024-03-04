@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+            text-align: center; 
+            text-transform: uppercase; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            letter-spacing: 2px; 
+        }
+        header img {
+            width: 100px; 
+        }
+        .service-container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .service-container h2 {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .service-container p {
+            margin-bottom: 15px;
+        }
+        .service-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        .service-list li {
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            width: 100%;
+        }
+        .social-icons {
+            margin-top: 10px;
+        }
+        .social-icons a {
+            display: inline-block;
+            margin: 0 10px;
+            color: #fff;
+            font-size: 24px;
+        }
+        .menu-popup {
+            display: none;
+            position: absolute;
+            top: 50px;
+            right: 20px;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            border-radius: 4px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .menu-popup ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        .menu-popup ul li {
+            margin-bottom: 10px;
+        }
+        .menu-popup ul li a {
+            color: #fff;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+        .menu-popup ul li a i {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="IMG_1953.PNG" alt="TRANSLINGUA PRO Logo">
+        <h1>TRANSLINGUA PRO</h1> 
+        <div id="menuBtn">Menu</div>
+        <div id="menuPopup" class="menu-popup">
+            <ul>
+                <li><a href="home page.html">Home</a></li>
+                <li><a href="about us.html">About</a></li>
+                <li><a href="service page.html">Services</a></li>
+                <li><a href=" contcet us.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="service-container">
+        <h2>Our Translation Services</h2>
+        <p>At TRANSLINGUA PRO, we offer a comprehensive range of translation services to meet your diverse needs. Our team of expert linguists and translators is dedicated to delivering accurate, reliable, and culturally sensitive translations across various languages and industries.</p>
+        
+        <ul class="service-list">
+            <li>
+                <h3>1. Document Translation</h3>
+                <p>We specialize in translating a wide variety of documents, including but not limited to:</p>
+                <ul>
+                    <li>Business documents (contracts, reports, presentations)</li>
+                    <li>Academic papers and research articles</li>
+                    <li>Legal documents (agreements, certificates, court documents)</li>
+                    <li>Medical documents (patient records, research papers, medical reports)</li>
+                    <li>Personal documents (letters, resumes, certificates)</li>
+                </ul>
+            </li>
+            <li>
+                <h3>2. Website Localization</h3>
+                <p>Expanding your business to international markets? Our website localization services ensure that your website resonates with your target audience in their native language and culture. From translating website content and user interfaces to adapting graphics and multimedia elements, we help you create a seamless online experience for users worldwide.</p>
+            </li>
+            <li>
+                <h3>3. Software Localization</h3>
+                <p>Do you have software applications that need to be tailored to different linguistic and cultural contexts? Our software localization experts ensure that your software products are fully functional and linguistically accurate across multiple languages and regions. We handle everything from user interface translation to software testing and quality assurance.</p>
+            </li>
+           
+        </ul>
+    </div>
+    <footer>
+        <p>Follow us on social media:</p>
+        <div class="social-icons">
+            <a href="#"><img src="https://img.icons8.com/color/48/000000/facebook.png"/></a>
+            <a href="#"><img src="https://img.icons8.com/color/48/000000/twitter.png"/></a>
+            <a href="#"><img src="https://img.icons8.com/color/48/000000/instagram-new.png"/></a>
+        </div>
+        <p>&copy; 2024 TRANSLINGUA PRO. All rights reserved.</p>
+    </footer>
+    <script>
+        // JavaScript to toggle menu popup
+        const menuBtn = document.getElementById('menuBtn');
+        const menuPopup = document.getElementById('menuPopup');
+
+        menuBtn.addEventListener('click', () => {
+            menuPopup.style.display = (menuPopup.style.display === 'block') ? 'none' : 'block';
+        });
+    </script>
+
+</body>
+</html>
